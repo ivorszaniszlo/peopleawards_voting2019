@@ -6,9 +6,9 @@ People Awards is a very important company event in our international media group
 
 ## Screenhots
 
-![People Awards Homepage](./images/people_awards2019.jpg)
-![People Awards Voting App admin](./images/people_awards2019_voting_result.jpg)
-![People Awards Voting App](./images/people_awards2019_voting.jpg)
++ ![People Awards Homepage](./images/people_awards2019.jpg)
++ ![People Awards Voting App admin](./images/people_awards2019_voting_result.jpg)
++ ![People Awards Voting App](./images/people_awards2019_voting.jpg)
 
 ## Description
 
@@ -35,9 +35,7 @@ and install it with
 ```
 sudo ./xampp-linux-*-installer.run
 ```
-and create a peopleawards2019 sql db with phpmyadmin
-```
-
+and create a peopleawards2019 sql db with phpmyadmin.
 
 ## Note
 
