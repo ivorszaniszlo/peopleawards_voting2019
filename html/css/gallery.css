@@ -1,0 +1,223 @@
+/*==========================================*
+*****	Template Name: Click Models Studio
+*****	E-mail: kontakt@klikdizajn.net
+*****	Website: www.klikdizajn.net
+* ==========================================*
+*****	G A L L E R Y
+* ==========================================*/
+
+.img-loader,
+.lightbox {
+	text-align: center;
+	line-height: 0px;
+}
+body:after {
+	display: none;
+}
+.img-dataContainer:after,
+.img-outerContainer:after {
+	content: "";
+	clear: both;
+}
+body.img-disable-scrolling {
+	overflow: hidden
+}
+.gallery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background-color: rgba(255,255,255,0.8);
+	display: none;
+}
+.lightbox {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	font-weight: 400;
+}
+.lightbox .img-image {
+	display: block;
+	height: auto;
+	max-width: inherit;
+}
+.lightbox a img {
+	border: none
+}
+.img-outerContainer {
+	position: relative;
+	background-color: rgba(255,255,255,0.5);
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+.img-loader,
+.img-nav {
+	position: absolute;
+	left: 0;
+}
+.img-outerContainer:after {
+	display: table;
+}
+.img-container {
+	padding: 4px;
+}
+.img-loader {
+	top: 43%;
+	height: 25%;
+	width: 100%;
+}
+.img-cancel {
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+}
+.img-nav {
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+.img-container > .nav {
+	left: 0;
+}
+.img-nav a {
+	outline: 0;
+	background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
+}
+.img-next,
+.img-prev {
+	height: 100%;
+	cursor: pointer;
+	display: block
+}
+.img-nav a.img-prev {
+	width: 34%;
+	left: 0;
+	float: left;
+	background: url(../images/gallery/icons/prev.png) left 48% no-repeat;
+	filter: alpha(Opacity=0);
+	opacity: 0;
+	-webkit-transition: opacity .6s;
+	-moz-transition: opacity .6s;
+	-o-transition:opacity .6s;
+	transition:opacity .6s;
+}
+.img-nav a.img-prev:hover {
+	filter: alpha(Opacity=100);
+	opacity: 1;
+}
+.img-nav a.img-next {
+	width: 64%;
+	right: 0;
+	float: right;
+	background: url(../images/gallery/icons/next.png) right 48% no-repeat;
+	filter: alpha(Opacity=0);
+	opacity: 0;
+	-webkit-transition: opacity .6s;
+	-moz-transition: opacity .6s;
+	-o-transition: opacity .6s;
+	transition: opacity .6s;
+}
+	
+.img-nav a.img-next:hover {
+	filter: alpha(Opacity=100);
+	opacity: 1;
+}
+.img-dataContainer {
+	background: rgba(255,255,255,1); 
+	margin: 0 auto;
+	padding: 5px 0px;
+	width: 100%;
+}
+.img-dataContainer:after {
+	display: table;
+}
+.img-data{
+	padding: 0 7px;
+	color: #ccc;
+}
+.img-data .img-details {
+	width: 85%;
+	float: left;
+	text-align: left;
+	line-height: 1.1em;
+}
+.img-data .img-caption {
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1em;
+}
+.img-data .img-number {
+	display: block;
+	clear: left;
+	padding: 5px;
+	font-size: 14px;
+	color: #000;
+}
+.img-data .img-close {
+	display: block;
+	float: right;
+	width: 30px;
+	height: 30px;
+	background: url(../images/gallery/icons/close.png) top right no-repeat;
+	text-align: right;
+	outline: 0;
+	filter: alpha(Opacity=70);
+	opacity: .7;
+	-webkit-transition: opacity .2s;
+	-moz-transition: opacity .2s;
+	-o-transition: opacity .2s;
+	transition: opacity .2s;
+}
+.img-data .img-close:hover {
+	cursor: pointer;
+	filter: alpha(Opacity=100);
+	opacity: 1;
+}
+.gallery {
+	font-size: 0px;
+}
+.gallery div {
+    font-size: 1rem;
+    display: inline-block;
+    box-sizing: border-box;     
+    padding: 5px;
+}
+.gallery div img {
+    height: 200px;
+    opacity: 0;
+}
+.gallery img.gallery_loaded {
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+    opacity: 1;
+}
+.gallery .gallery_item {
+	font-size: 1rem;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0px 5px 10px 5px;
+}
+.gallery img.gallery_img {
+	height: 200px;
+	transition: all 0.4s;
+}
+.gallery img.gallery_img:hover {
+	filter: brightness(1.2);
+	-webkit-filter: brightness(1.2);
+	transition: all 0.4s;
+}
+.gallery img.gallery_loaded {
+	-webkit-transition: opacity 0.5s ease-in;
+	-moz-transition: opacity 0.5s ease-in;
+	-o-transition: opacity 0.5s ease-in;
+	-ms-transition: opacity 0.5s ease-in;
+	transition: opacity 0.5s ease-in;
+	opacity: 1;
+}

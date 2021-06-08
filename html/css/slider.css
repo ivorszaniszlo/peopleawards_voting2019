@@ -1,0 +1,203 @@
+/*==========================================*
+*****	Template Name: Click Models Studio
+*****	E-mail: kontakt@klikdizajn.net
+*****	Website: www.klikdizajn.net
+* ==========================================*
+*****	S L I D E R
+* ==========================================*/
+
+#slider {
+	margin-top: 130px
+}
+.slider {
+	position: relative;
+	margin: 0 auto;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 768px;
+	overflow: hidden;
+	visibility: hidden;
+	background-color: #fff;
+}
+.slides {
+	cursor: default;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	min-width: 100%;
+	height: 768px;
+	min-height: 100%;
+	overflow: hidden;
+}
+.thumb-navigator {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 290px;
+	height: 100%;
+	background: rgba(0,0,0,0.05);
+}
+.slide-left {
+	top: 0px;
+	left: 300px;
+	width: 40px;
+	height: 40px;
+}
+.slide-right {
+	top: 0px;
+	right: 8px;
+	width: 40px;
+	height: 40px;
+}
+.arrow-left, .arrow-right {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url('../images/slider/icons/arrows.png') no-repeat;
+    overflow: hidden;
+}
+.arrow-left {
+	background-position: -10px -40px;
+}
+.arrow-right {
+	background-position: -70px -40px; 
+}
+.arrow-left:hover {
+	background-position: -130px -40px; 
+}
+.arrow-right:hover {
+	background-position: -190px -40px; 
+}
+.arrow-left.arrow-leftdn {
+	background-position: -250px -40px;
+}
+.arrow-right.arrow-rightdn {
+	background-position: -310px -40px; 
+}
+.arrow-left.arrow-leftds {
+	background-position: -10px -40px; 
+	opacity: .3; pointer-events: none; 
+}
+.arrow-right.arrow-rightds {
+	background-position: -70px -40px; 
+	opacity: .3; pointer-events: none; 
+}
+
+.thumbnails .p {
+	position: absolute;    
+	top: 0px;    
+	left: 0px;    
+	width: 236px;    
+	height: 156px;
+}
+
+.thumbnails .p img {
+	padding: 5px;
+	border: 2px solid transparent;
+	border-image: linear-gradient(to left bottom, rgba(255,255,255,0.5) 20%, rgba(255,255,255,0.05) 20%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.05) 80%, rgba(255,255,255,0.5) 80%);
+	border-image-slice: 1;
+}
+
+.thumbnails .t {
+	position: absolute;    
+	top: 0px;    
+	left: 0px;    
+	width: 100%;    
+	height: 100%;    
+	border: none;
+}
+.thumbnails .w {
+	position: absolute;    
+	top: 0px;    
+	left: 0px;    
+	width: 100%;    
+	height: 100%;
+}
+.thumbnails .c {
+	position: absolute;    
+	top: 0px;    
+	left: 0px;    
+	width: 236px;    
+	height: 156px;    
+	border: none;    
+	cursor: pointer; 
+	box-sizing: content-box;    
+	background: url('../images/slider/icons/hover.png') -800px -800px no-repeat;
+	transition: all 0.4s;
+
+}
+.thumbnails .pav .c {
+	top: 0px;
+	left: 0px;
+	width: 236px;
+	height: 156px;
+	border: none;
+	background-position: 50% 50%;
+}
+.thumbnails .p:hover .c {
+	top: 0px;    
+	left: 0px;    
+	width: 236px;   
+	height: 156px;   
+	border: none;
+    background-position: 50% 50%;
+	transition: all 0.4s;
+}
+.thumbnails .p.pdn .c {
+	background-position: 50% 50%;   
+	width: 236px;   
+	height: 156px;  
+	border: none;
+}
+
+.caption {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: rgba(0,0,0,0.5);
+	color: rgba(255,255,255,0.5);
+	font-size: 48px;
+	text-transform: uppercase;
+	font-weight: 800;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0px 15px 15%;
+	z-index: 9999;
+}
+
+.caption a {
+	color: rgba(255,255,255,0.5)!important;
+}
+
+.caption span {
+	font-weight: 100;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+	#slider {
+		margin-top: 50px;
+	}
+	.thumb-navigator {
+		background: none;
+	}
+	.thumbnails .t {
+		display: none
+	}
+	.thumbnails .c {
+		display: none;
+	}
+	span.arrow-left.slide-left,
+	span.arrow-right.slide-right	{
+		display: none
+	}
+	.caption {
+		padding: 15px;
+	}
+}
